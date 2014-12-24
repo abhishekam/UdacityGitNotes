@@ -16,3 +16,10 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 We can keep making changes to files and keep adding to the changed files to the staging area. We can then use diff --staged and the files in the staged area to pick and choose files which constitute a logical commit, and commit only those files
 ----------------------------
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Situations that I think a branch is justified for:
+- When we want to develop a experimental feature, or do some changes that we may not be sure if it works.
+- When we make specific changes to enable support for a particular system, client, OS.
+- Maybe for different developers
