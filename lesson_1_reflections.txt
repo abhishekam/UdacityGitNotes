@@ -1,0 +1,51 @@
+-------------------
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+The diff command brings up a list of changes made to the lines in the file.
+
++ represents the new line
+- represents the old line
+
+Also, the diff command only brings up the changed lines. So, using the diff command helped to view the changes in a snapshot and helped us identify the line which had the typo, by comparing it with the old version of the line just below it.
+
+-------------------
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+By having access to the entire history of a file, we could:
+- restore to any previous version, which may be now is the preferred version
+- compare the current version to any previous version and see the changes made, which is really helpful to view if we have made any significant changes to places where we didn't intend to.
+- compare two versions in the history and pin point from where a bug was introduced/rectified or a particular code chage was made.
+
+All these would be a nightmare if we had to save multiple copies of files just to track the changes in the file. Having easy access to a file's history really helps in this and makes us efficient programmers.
+
+---------------------
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros:
+- Commit history is logical, and can be associated with features/checkpoints in code. This helps give a snapshot view of the progrss of code.
+- It is easy to remove/add logical features via commits if the commits are done on logical checkpoints.
+- Manual commits, based on a notion that committed code is checked for compilation errors, which is the industry norm,. Automated commits run the risk of archiving code that does not comply.
+- Manual commits empower user - allowing the user flexibility to commit based on this/her work.
+
+Cons:
+- Makes commit sizes subjective
+- The user needs to be well educated/informed about the commit sizes, else, it has a chance of commits going huge.
+- May not guarantee that the code that is checked in, compiles correctly.
+
+---------------------
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Some version controls have concepts of repositories. This exists, if the version control system is targeted towards saving interrelated files. If files are inter-related, it is better to store a snapshot of all the files at a point where you intend to commit changes to a single file, because you'd want to revert all the files when you revert to the particular commit, rather than handling each file's commit at their individual commit points.
+
+---------------------
+How can you use the commands git log and git diff to view the history of files?
+
+git log helps us to view the commit history of files. From viewing the commit comments, we can get an idea of what has changed in the file.
+
+git diff <commit_id_1> <commit_id_2>
+//helps us to find out the actual changes in the file between two commits
+
+---------------------
+How might using version control make you more confident to make changes that could break something?
+
+With version control, we can revert to any of the previous versions of our repo, and therefore, if we introduce a bug, we can get to know from what version, the bug was introduced. Once we find the commit in which the bug was introduced from, we can do a diff of this commit with the previous commit and get to know what caused the bug. So with version control, we can be very confident of making changes, even if they could break something.
