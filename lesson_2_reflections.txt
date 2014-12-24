@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+A new directory by the name '.git' gets created. This is where git stores metadata about the directory that it has now started to track, viz., the current directory.
+
+git init tells git to start tracking the changes made to the directory, and the files in the directory. It basically brings the current directory under version control
+----------------------------
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area holds all the files changed to make the next intended logical checkpoint. Working directory holds all the files in the directory, while a repository is a working directory that has been git initialized.
+
+Staging area allows us to collect files intended for a logical commit point, from where we can go back and forth till we get to the checkpoint, and then, make a commit.
