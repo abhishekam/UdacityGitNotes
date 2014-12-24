@@ -10,3 +10,9 @@ How is the staging area different from the working directory and the repository?
 Staging area holds all the files changed to make the next intended logical checkpoint. Working directory holds all the files in the directory, while a repository is a working directory that has been git initialized.
 
 Staging area allows us to collect files intended for a logical commit point, from where we can go back and forth till we get to the checkpoint, and then, make a commit.
+----------------------------
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+We can keep making changes to files and keep adding to the changed files to the staging area. We can then use diff --staged and the files in the staged area to pick and choose files which constitute a logical commit, and commit only those files
+----------------------------
