@@ -23,3 +23,9 @@ Situations that I think a branch is justified for:
 - When we want to develop a experimental feature, or do some changes that we may not be sure if it works.
 - When we make specific changes to enable support for a particular system, client, OS.
 - Maybe for different developers
+----------------------------
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams help us to point to unreachable commits, if any that we are on, and aid is in making them reachable. It also helps us in viewing the stages/commit points where the branches were made from the master, and the changes that have since happened.
+----------------------------
