@@ -29,3 +29,8 @@ How do the diagrams help you visualize the branch structure?
 
 Diagrams help us to point to unreachable commits, if any that we are on, and aid is in making them reachable. It also helps us in viewing the stages/commit points where the branches were made from the master, and the changes that have since happened.
 ----------------------------
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of mergin two branches together basically places the tip of the head of the destination branch - which is the current chacked out branch, at the head of the source branch. All the commits made on either of the branches up unti the point of the merge are available after the merge. So, a merge is jus tof change of labels to the commits - in a sense.
+----------------------------
