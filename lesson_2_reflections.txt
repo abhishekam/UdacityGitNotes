@@ -34,3 +34,8 @@ What is the result of merging two branches together? Why do we represent it in t
 
 The result of mergin two branches together basically places the tip of the head of the destination branch - which is the current chacked out branch, at the head of the source branch. All the commits made on either of the branches up unti the point of the merge are available after the merge. So, a merge is jus tof change of labels to the commits - in a sense.
 ----------------------------
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Manually merging always gives us better control. We can logically merge and see what lines need to go into the merged file. Auto merging needs too much of intelligence built in if there has to be some sort of correct merge. However, in cases where just new lines of code were added, mostly at the top/bottom of a file, or when a new function itself was added, maybe some sort of intelligence can be built in to do an auto merge. In any case, even after the auto merge, it is always prudent to check manually and then add/commit the merge.
+----------------------------
