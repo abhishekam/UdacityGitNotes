@@ -2,3 +2,8 @@ When would you want to use a remote repository rather than keeping all your work
 
 All the time. It is always better to a remote repository. The repo need not always be public, but it always seems better to set up a remote repository for you to have a back up, rather than having your work in your local, where a disk failure/system failure/thefts/ could mean that you lose all of your work.
 --------------------
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+- It would probably interfere with your work. It could be that git pulls its remotes when you are probably in the middle of working on the files which are changed on the remote.
+- You'd probably be forced to manually merge intermediate files, files on which your work is as yet incomplete.
