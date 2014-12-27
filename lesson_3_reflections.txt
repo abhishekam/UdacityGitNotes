@@ -7,3 +7,17 @@ Why might you want to always pull changes manually rather than having Git automa
 
 - It would probably interfere with your work. It could be that git pulls its remotes when you are probably in the middle of working on the files which are changed on the remote.
 - You'd probably be forced to manually merge intermediate files, files on which your work is as yet incomplete.
+--------------------
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Fork - is a copy of someone else's GitHub repository under your GitHub repositories. It exists only in GitHub. It is basically a clone of the original repository, exisiting only on GitHub's servers
+
+We use fork to make changes to a repository on GitHub when we don't have the rights to push the changes to the particular repository. So forking sets up a copy of the repository which we can clone and push changes to.
+
+Clone - basically creates a copy of a repository. Cloning can create  a copy of either a remote repository or a local repository.
+
+Generally, clone is used to create a copy of a remote repository, or a local repository. Clone is not limited to only GitHub and can be applied in general whenver a copy of the reposiotry is required.
+
+Branches - basically are labels given tp a group of commits. They are generally used when we want to develop features independently of the normal process of bug fixes on the current working copy of the code. We could, on completion of the feature, choose to merge it back into the main branch, or discard it if we are not satisifed
+--------------------
