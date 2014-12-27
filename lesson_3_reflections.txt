@@ -1,1 +1,4 @@
 When would you want to use a remote repository rather than keeping all your work local?
+
+All the time. It is always better to a remote repository. The repo need not always be public, but it always seems better to set up a remote repository for you to have a back up, rather than having your work in your local, where a disk failure/system failure/thefts/ could mean that you lose all of your work.
+--------------------
