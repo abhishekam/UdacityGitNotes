@@ -25,3 +25,10 @@ Branches - basically are labels given tp a group of commits. They are generally 
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 This is what allows us to find the changes made to files in the staging area. It also allows us to pull in recent remote commits, not merge them, and then compare the changes made locally with the most recent remote commits.
+--------------------
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+I guess I would be foreced to use other source control systems - SVN, TFS (if on Windows systems). The above mentioned ones are mostly central source control systems, so I'd have to be connected to the server to make commits - so working offline would definitely be difficult.
+
+Also, the setup is a huge problem. Git and GitHub REALLY solve the setup issue for me. In others, I mostly have to set up a serve as the remote repository system.
