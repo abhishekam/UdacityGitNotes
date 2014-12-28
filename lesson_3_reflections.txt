@@ -21,3 +21,7 @@ Generally, clone is used to create a copy of a remote repository, or a local rep
 
 Branches - basically are labels given tp a group of commits. They are generally used when we want to develop features independently of the normal process of bug fixes on the current working copy of the code. We could, on completion of the feature, choose to merge it back into the main branch, or discard it if we are not satisifed
 --------------------
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+This is what allows us to find the changes made to files in the staging area. It also allows us to pull in recent remote commits, not merge them, and then compare the changes made locally with the most recent remote commits.
