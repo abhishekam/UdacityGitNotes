@@ -32,3 +32,12 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 I guess I would be foreced to use other source control systems - SVN, TFS (if on Windows systems). The above mentioned ones are mostly central source control systems, so I'd have to be connected to the server to make commits - so working offline would definitely be difficult.
 
 Also, the setup is a huge problem. Git and GitHub REALLY solve the setup issue for me. In others, I mostly have to set up a serve as the remote repository system.
+--------------------
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+I would like to make changes in a separate branch when I basically want the master to be clean and working, while I am still working on making the changes. So, when I am done making my changes to the branch, I can then merge back the changes into my master.
+
+This would ensure I have a clean working copy when I am actually workin gon a new feature. It also allows me to have versioning control on the feature being developed, so I can make commits/go back and forth on the branch without worrying about the master. If I feel it, I can even discard the change by deleting the master beofre the merge.
+
+Another added benefit is that branches allow us to collaborate with other developers. So, I can make a change in the branch, merge the master to the branch and test that the merge doesn't break anything, and then raise a pull request so that my changes actually go into the master, maybe even to the master branch of the source repo, if my master repo was a clone.
